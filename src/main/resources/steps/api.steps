@@ -1,0 +1,3 @@
+Composite: When I send request
+When I issue a HTTP GET request for a resource with the URL 'https://www.google.com/'
+Then the response code is = '204'

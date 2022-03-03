@@ -1,7 +1,13 @@
-Description: Simple story to check the page availability;
+Description: Simple story to reproduce NPE
 
-Scenario: Open application under test
-Given I am on the main application page
+Scenario: First scenario
+Then `1` is equal to `1`
 
-Scenario: Verify page title
-Then the page title is equal to 'Vividus Test Site'
+Scenario: Second scenario
+When I execute steps while counter is less than `49` with increment `1` starting from `0`:
+|step|
+|When I send request|
+Then `1` is equal to `1`
+
+Scenario: Third scenario
+Then `1` is equal to `1`
